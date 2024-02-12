@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'YoungSerif';
+    src: url(../assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+@font-face {
+    font-family: 'Outfit-Light';
+    src: url(../assets/fonts/outfit/static/Outfit-Light.ttf);
+}
+@font-face {
+    font-family: 'Outfit-Bold';
+    src: url(../assets/fonts/outfit/static/Outfit-Bold.ttf);
+}
+@font-face {
+    font-family: 'Outfit';
+    src: url(../assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+
+.receita{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    align-items: center;
+    background-color: #f3e5d8;
+}
+
+.receita .card img{
+    width: 100%;
+    padding: 30px;
+    border-radius: 35px;
+}
+.receita .card{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 50%;
+    border-radius: 10px;
+    padding: 10px;
+    gap:20px;
+    text-align: justify;
+}
+
+.receita .card .card-text{
+    padding: 1px 30px;
+}
+
+.receita .card h1{
+    font-family: 'YoungSerif';
+    font-weight:300;
+    font-size: 30px;
+    color: #302f2d;
+
+}
+
+.receita .card p{
+    font-family: 'Outfit-Light';
+    font-size: 14px;
+}
+
+.receita .card-time{
+    background-color: #fff7fc;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    
+}
+
+.receita .card-time h3{
+    font-family: 'Outfit';
+    color: #712f4a;
+}
+
+.receita .card-time ul li, .receita .card li{
+    font-family: 'Outfit-Light';
+    margin-left: 20px;
+    font-size: 14px;
+    padding: 5px 15px;
+}
+
+.receita .card h2{
+    font-family: 'YoungSerif';
+    font-weight: 200;
+    font-size: 25px;
+    color: #82493c;
+}
+
+hr{
+    width: 100%;
+    margin: 20px 0;
+}
+
+::marker{
+    color:#82493c;
+    font-weight: 900;
+}
+
+.receita .card table{
+    font-family: 'Outfit-Light';
+    padding: 10px 0;
+}
+.receita .card td{
+    padding: 5px;
+}
+
+.receita .card .grama{
+    font-family: 'Outfit';
+    color: #82493c;
+    font-weight: 700;
+    padding-left: 200px;
+}
+
+@media (max-width: 435px){
+    .receita{
+        padding: 0;
+    }
+    .receita .card img{
+        border-radius: 0;
+        padding: 0;
+    }
+    .receita .card{
+        width: 100%;
+        padding: 0;
+    }
+
+    .receita .card h1{
+        font-size: 25px;
+    }
+
+    .receita .card p{
+        font-size: 13px;
+    }
+
+    .receita .card h2{
+        font-size: 19px;
+    }
+    .receita .card-time ul li, .receita .card li{
+        font-size: 13px;
+    }
+
+    .receita .card-time h3{
+        font-size: 16px;
+    }
+
+    .receita .card .grama{
+        font-weight: 600;
+        padding-left: 100px;
+    }
+  
+}
